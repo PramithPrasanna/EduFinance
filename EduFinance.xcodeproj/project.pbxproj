@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		70F798AD25B8DDDB006BEEF6 /* MyAuthorizationAppleIDButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F798AC25B8DDDB006BEEF6 /* MyAuthorizationAppleIDButton.swift */; };
 		A7C5098625ACA8BA00CD702D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C5098525ACA8BA00CD702D /* AppDelegate.swift */; };
 		A7C5098825ACA8BA00CD702D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C5098725ACA8BA00CD702D /* SceneDelegate.swift */; };
 		A7C5098A25ACA8BA00CD702D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C5098925ACA8BA00CD702D /* ViewController.swift */; };
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		70F798A825B8DAE7006BEEF6 /* EduFinance.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EduFinance.entitlements; sourceTree = "<group>"; };
+		70F798AC25B8DDDB006BEEF6 /* MyAuthorizationAppleIDButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAuthorizationAppleIDButton.swift; sourceTree = "<group>"; };
 		A7C5098225ACA8BA00CD702D /* EduFinance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EduFinance.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7C5098525ACA8BA00CD702D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A7C5098725ACA8BA00CD702D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -99,10 +102,12 @@
 		A7C5098425ACA8BA00CD702D /* EduFinance */ = {
 			isa = PBXGroup;
 			children = (
+				70F798A825B8DAE7006BEEF6 /* EduFinance.entitlements */,
 				A7C5098525ACA8BA00CD702D /* AppDelegate.swift */,
 				A7C5098725ACA8BA00CD702D /* SceneDelegate.swift */,
 				A7C5098925ACA8BA00CD702D /* ViewController.swift */,
 				A7C5098B25ACA8BA00CD702D /* Main.storyboard */,
+				70F798AC25B8DDDB006BEEF6 /* MyAuthorizationAppleIDButton.swift */,
 				A7C5098E25ACA8BE00CD702D /* Assets.xcassets */,
 				A7C5099025ACA8BE00CD702D /* LaunchScreen.storyboard */,
 				A7C5099325ACA8BE00CD702D /* Info.plist */,
@@ -261,6 +266,7 @@
 				A7C5098A25ACA8BA00CD702D /* ViewController.swift in Sources */,
 				A7C5098625ACA8BA00CD702D /* AppDelegate.swift in Sources */,
 				A7C5098825ACA8BA00CD702D /* SceneDelegate.swift in Sources */,
+				70F798AD25B8DDDB006BEEF6 /* MyAuthorizationAppleIDButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,6 +442,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = EduFinance/EduFinance.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = EduFinance/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -454,6 +461,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = EduFinance/EduFinance.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = EduFinance/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
