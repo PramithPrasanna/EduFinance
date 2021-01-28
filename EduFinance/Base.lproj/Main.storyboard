@@ -16,13 +16,182 @@
                     <view key="view" contentMode="scaleToFill" id="j7J-Qb-LTf">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Edu" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0V1-Vz-rWv">
+                                <rect key="frame" x="68" y="59" width="116" height="79"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="79" id="gA2-8p-SNO"/>
+                                    <constraint firstAttribute="width" constant="116" id="qhC-yU-8Xf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="50"/>
+                                <color key="textColor" red="0.83137254900000002" green="0.87843137250000003" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Finance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e1k-Pu-vNH">
+                                <rect key="frame" x="165" y="67" width="201" height="65"/>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="50"/>
+                                <color key="textColor" red="0.94509803920000002" green="0.61176470589999998" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="cuG-t0-F9H">
+                                <rect key="frame" x="20" y="140" width="374" height="478"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aYs-BN-rww">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
+                                        <color key="backgroundColor" red="1" green="0.46962794419999998" blue="0.21119528000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="H81-Ff-7xx"/>
+                                            <constraint firstAttribute="height" constant="50" id="lgq-wk-vBa"/>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="50" id="xwZ-ev-gpN"/>
+                                        </constraints>
+                                        <state key="normal" title="Budgeting">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="selectBudgeting:" destination="ubt-A2-HDD" eventType="touchUpInside" id="6KG-1k-8fX"/>
+                                            <action selector="selectBudgetingPressed:" destination="ubt-A2-HDD" eventType="touchUpInside" id="YXw-Ay-Lcm"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w5r-t3-Sg3">
+                                        <rect key="frame" x="0.0" y="55" width="374" height="20.5"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TA7-Nd-ThE">
+                                        <rect key="frame" x="0.0" y="80.5" width="374" height="50"/>
+                                        <color key="backgroundColor" red="1" green="0.46962794419999998" blue="0.21119528000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="50" id="GBS-7W-8AJ"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="JMq-eK-DgX"/>
+                                            <constraint firstAttribute="height" constant="50" id="Xx6-LE-oSE"/>
+                                        </constraints>
+                                        <state key="normal" title="Credit">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xrb-y7-aDs">
+                                        <rect key="frame" x="0.0" y="135.5" width="374" height="20.5"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2em-6Z-v9l">
+                                        <rect key="frame" x="0.0" y="161" width="374" height="50"/>
+                                        <color key="backgroundColor" red="1" green="0.46962794419999998" blue="0.21119528000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="50" id="B1r-TB-rwe"/>
+                                            <constraint firstAttribute="height" constant="50" id="MFo-V3-322"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="twf-76-3Kr"/>
+                                        </constraints>
+                                        <state key="normal" title="Banking &amp; Investing">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GoW-Ga-Tev">
+                                        <rect key="frame" x="0.0" y="216" width="374" height="20.5"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YCX-GE-LLU">
+                                        <rect key="frame" x="0.0" y="241.5" width="374" height="50"/>
+                                        <color key="backgroundColor" red="1" green="0.46962794419999998" blue="0.21119528000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="50" id="Gk4-9a-za8"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="MEF-eQ-xan"/>
+                                            <constraint firstAttribute="height" constant="50" id="mDy-4S-RBi"/>
+                                        </constraints>
+                                        <state key="normal" title="Auto Finance">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Hz-Yw-XFc">
+                                        <rect key="frame" x="0.0" y="296.5" width="374" height="20.5"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NEB-bx-Raf">
+                                        <rect key="frame" x="0.0" y="322" width="374" height="50"/>
+                                        <color key="backgroundColor" red="1" green="0.46962794419999998" blue="0.21119528000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="50" id="FaQ-uX-wn1"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="Ur6-C5-LUd"/>
+                                            <constraint firstAttribute="height" constant="50" id="ZiB-ea-xfB"/>
+                                        </constraints>
+                                        <state key="normal" title="Paying for College">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ve9-O5-FZZ">
+                                        <rect key="frame" x="0.0" y="377" width="374" height="20.5"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ban-zC-Nwi">
+                                        <rect key="frame" x="0.0" y="402.5" width="374" height="50"/>
+                                        <color key="backgroundColor" red="1" green="0.46962794419999998" blue="0.21119528000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="LaF-RN-UNr"/>
+                                            <constraint firstAttribute="height" constant="50" id="XVc-gs-Gou"/>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="50" id="uBL-sC-SHE"/>
+                                        </constraints>
+                                        <state key="normal" title="Taxes">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wW0-qF-gUr">
+                                        <rect key="frame" x="0.0" y="457.5" width="374" height="20.5"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="2em-6Z-v9l" firstAttribute="leading" secondItem="cuG-t0-F9H" secondAttribute="leading" id="1Cy-dJ-mdU"/>
+                                    <constraint firstItem="aYs-BN-rww" firstAttribute="leading" secondItem="cuG-t0-F9H" secondAttribute="leading" id="1Qp-yi-7dl"/>
+                                    <constraint firstItem="YCX-GE-LLU" firstAttribute="leading" secondItem="cuG-t0-F9H" secondAttribute="leading" id="3HI-GC-ix6"/>
+                                    <constraint firstAttribute="trailing" secondItem="2em-6Z-v9l" secondAttribute="trailing" id="9Jp-EU-Zrk"/>
+                                    <constraint firstAttribute="trailing" secondItem="YCX-GE-LLU" secondAttribute="trailing" id="Afw-Zd-coo"/>
+                                    <constraint firstAttribute="trailing" secondItem="NEB-bx-Raf" secondAttribute="trailing" id="Dnd-uY-P7q"/>
+                                    <constraint firstItem="NEB-bx-Raf" firstAttribute="leading" secondItem="cuG-t0-F9H" secondAttribute="leading" id="EMJ-ms-U3K"/>
+                                    <constraint firstAttribute="trailing" secondItem="aYs-BN-rww" secondAttribute="trailing" id="F1Z-c0-dQ6"/>
+                                    <constraint firstAttribute="trailing" secondItem="2em-6Z-v9l" secondAttribute="trailing" id="GoB-mH-ebd"/>
+                                    <constraint firstItem="aYs-BN-rww" firstAttribute="leading" secondItem="cuG-t0-F9H" secondAttribute="leading" id="GoN-hB-5Yl"/>
+                                    <constraint firstItem="TA7-Nd-ThE" firstAttribute="leading" secondItem="cuG-t0-F9H" secondAttribute="leading" id="I8n-mH-osm"/>
+                                    <constraint firstAttribute="trailing" secondItem="YCX-GE-LLU" secondAttribute="trailing" id="PTb-kv-Jx6"/>
+                                    <constraint firstItem="2em-6Z-v9l" firstAttribute="leading" secondItem="cuG-t0-F9H" secondAttribute="leading" id="Rg7-8S-Udb"/>
+                                    <constraint firstAttribute="trailing" secondItem="TA7-Nd-ThE" secondAttribute="trailing" id="b7A-4F-0J2"/>
+                                    <constraint firstAttribute="trailing" secondItem="aYs-BN-rww" secondAttribute="trailing" id="bH7-6O-194"/>
+                                    <constraint firstItem="NEB-bx-Raf" firstAttribute="leading" secondItem="cuG-t0-F9H" secondAttribute="leading" id="hDa-0C-qpp"/>
+                                    <constraint firstAttribute="trailing" secondItem="TA7-Nd-ThE" secondAttribute="trailing" id="lHq-Jc-vy7"/>
+                                    <constraint firstItem="YCX-GE-LLU" firstAttribute="leading" secondItem="cuG-t0-F9H" secondAttribute="leading" id="oKY-gg-qdU"/>
+                                    <constraint firstItem="TA7-Nd-ThE" firstAttribute="leading" secondItem="cuG-t0-F9H" secondAttribute="leading" id="qDd-zT-Ub6"/>
+                                    <constraint firstAttribute="trailing" secondItem="NEB-bx-Raf" secondAttribute="trailing" id="wYa-vX-yr3"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="I76-Wu-ers"/>
                         <color key="backgroundColor" systemColor="tertiarySystemFillColor"/>
+                        <constraints>
+                            <constraint firstItem="cuG-t0-F9H" firstAttribute="top" secondItem="e1k-Pu-vNH" secondAttribute="bottom" constant="10" id="M0V-kH-Mc2"/>
+                            <constraint firstItem="cuG-t0-F9H" firstAttribute="leading" secondItem="I76-Wu-ers" secondAttribute="leading" constant="20" id="TuQ-dA-HlO"/>
+                            <constraint firstItem="I76-Wu-ers" firstAttribute="trailing" secondItem="cuG-t0-F9H" secondAttribute="trailing" constant="20" id="qFs-3y-ZFC"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hZU-TP-R6v" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="ubt-A2-HDD" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="865" y="94"/>
+            <point key="canvasLocation" x="863.768115942029" y="93.75"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="gjb-39-OQe">
