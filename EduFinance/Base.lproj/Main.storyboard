@@ -20,6 +20,10 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Edu" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0V1-Vz-rWv">
                                 <rect key="frame" x="68" y="59" width="116" height="79"/>
                                 <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="79" id="1fM-0J-UrF"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="79" id="7O4-0J-Uyn"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="116" id="FDQ-Af-WZS"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="116" id="NUd-NM-az6"/>
                                     <constraint firstAttribute="height" constant="79" id="gA2-8p-SNO"/>
                                     <constraint firstAttribute="width" constant="116" id="qhC-yU-8Xf"/>
                                 </constraints>
@@ -307,6 +311,9 @@
                                     <color key="titleShadowColor" systemColor="systemBackgroundColor"/>
                                     <imageReference key="image" image="questionmark.circle" catalog="system" symbolScale="medium"/>
                                 </state>
+                                <connections>
+                                    <segue destination="GHu-fl-gkn" kind="show" id="1Eg-4a-R0v"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r3E-h1-mr8" customClass="MyAuthorizationAppleIDButton" customModule="EduFinance" customModuleProvider="target">
                                 <rect key="frame" x="82" y="375" width="250" height="46"/>
@@ -335,6 +342,7 @@
                             <constraint firstItem="QO8-R2-unW" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-135.5" id="zgS-K5-IQl"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="4vy-Pv-1HX"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -345,26 +353,75 @@
             <objects>
                 <viewController id="GHu-fl-gkn" customClass="PopUpViewController" customModule="EduFinance" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yLK-gd-Tce">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" restorationIdentifier="sbPopUpID" translatesAutoresizingMaskIntoConstraints="NO" id="cDc-Pn-iSX">
-                                <rect key="frame" x="35.5" y="235.5" width="343" height="425"/>
+                                <rect key="frame" x="35.5" y="208.5" width="343" height="425"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UAo-I2-WWo">
-                                        <rect key="frame" x="238" y="372" width="70" height="22"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Edu" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NEq-1d-Nr9">
+                                        <rect key="frame" x="27" y="35.5" width="116" height="66"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="116" id="4Yj-ch-q6J"/>
+                                            <constraint firstAttribute="height" constant="66" id="5bE-IZ-59U"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="66" id="6rd-ij-0hc"/>
+                                            <constraint firstAttribute="width" constant="116" id="zUj-XQ-Mdr"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="50"/>
+                                        <color key="textColor" red="0.94509803920000002" green="0.61176470589999998" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Finance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N0i-5v-VIO">
+                                        <rect key="frame" x="121" y="36" width="201" height="65"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="65" id="70O-2O-s5e"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="65" id="Rgt-ID-5Lf"/>
+                                            <constraint firstAttribute="width" constant="201" id="vGf-9g-BiI"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="201" id="yxC-bw-EJr"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="50"/>
+                                        <color key="textColor" red="0.83137254900000002" green="0.87843137250000003" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="pFE-TG-9SX">
+                                        <rect key="frame" x="29.5" y="109" width="284" height="245"/>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="284" id="Qqu-Id-mR8"/>
+                                            <constraint firstAttribute="height" constant="245" id="azU-Vt-5Gg"/>
+                                        </constraints>
+                                        <string key="text">Edufinance is an application designed to assist young adults and others in common financial life skills. This includes how to do taxes, get a loan, buy a house, etc. EduFinance will provide a progression based learning format, complementary quizzes and tests, and certificates to celebrate your achievements as you progress forward.  </string>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UAo-I2-WWo">
+                                        <rect key="frame" x="252" y="370" width="70" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="70" id="3DA-4h-Qdh"/>
+                                            <constraint firstAttribute="height" constant="24" id="Ely-uR-3zp"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="24" id="KqZ-DF-oib"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="70" id="N20-yl-28l"/>
+                                        </constraints>
                                         <state key="normal" title=" Close" image="xmark.circle" catalog="system">
                                             <color key="titleColor" systemColor="systemRedColor"/>
                                             <color key="titleShadowColor" systemColor="systemRedColor"/>
                                         </state>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" systemColor="systemRedColor"/>
                                 <constraints>
+                                    <constraint firstItem="pFE-TG-9SX" firstAttribute="centerY" secondItem="cDc-Pn-iSX" secondAttribute="centerY" constant="19" id="0PO-si-BlH"/>
+                                    <constraint firstItem="pFE-TG-9SX" firstAttribute="centerX" secondItem="cDc-Pn-iSX" secondAttribute="centerX" id="3Ge-FB-9DZ"/>
+                                    <constraint firstItem="UAo-I2-WWo" firstAttribute="centerX" secondItem="cDc-Pn-iSX" secondAttribute="centerX" constant="115.5" id="C8a-4S-IUf"/>
                                     <constraint firstAttribute="width" constant="343" id="IAW-2j-MLf"/>
+                                    <constraint firstItem="UAo-I2-WWo" firstAttribute="centerY" secondItem="cDc-Pn-iSX" secondAttribute="centerY" constant="169.5" id="RGk-lH-Jwz"/>
+                                    <constraint firstItem="N0i-5v-VIO" firstAttribute="centerY" secondItem="cDc-Pn-iSX" secondAttribute="centerY" constant="-144" id="U0k-yo-rh5"/>
                                     <constraint firstAttribute="height" constant="425" id="ZL9-wB-T4v"/>
+                                    <constraint firstItem="NEq-1d-Nr9" firstAttribute="centerX" secondItem="cDc-Pn-iSX" secondAttribute="centerX" constant="-86.5" id="aWt-ta-0WB"/>
+                                    <constraint firstItem="N0i-5v-VIO" firstAttribute="centerX" secondItem="cDc-Pn-iSX" secondAttribute="centerX" constant="50" id="cME-ed-AeI"/>
+                                    <constraint firstItem="NEq-1d-Nr9" firstAttribute="centerY" secondItem="cDc-Pn-iSX" secondAttribute="centerY" constant="-144" id="tzK-MP-BGX"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -375,6 +432,7 @@
                             <constraint firstItem="cDc-Pn-iSX" firstAttribute="centerY" secondItem="yLK-gd-Tce" secondAttribute="centerY" id="jPx-hb-Wg4"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="oEb-Jq-F9V"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yx0-r8-BDb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
