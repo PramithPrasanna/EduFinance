@@ -1,0 +1,6 @@
+framework module Pods_EduFinance {
+  umbrella header "Pods-EduFinance-umbrella.h"
+
+  export *
+  module * { export * }
+}
